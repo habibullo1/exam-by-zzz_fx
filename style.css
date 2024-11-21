@@ -1,0 +1,258 @@
+/* styles.css */
+body {
+    font-family: "Livvic", sans-serif;
+    background-color: #014E56; 
+    color: white;
+  }
+  .container{
+    max-width: 1440px;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: transparent;
+  }
+  header{
+margin: 75px 165px;
+  }
+  
+  .logo{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .contact-btn {
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 25px;
+  }
+  
+  .contact-btn:hover {
+    background-color: white;
+    color: #184d53;
+    transition: 0.3s;
+  }
+  
+  .about-section {
+    padding: 100px 165px;
+  }
+  
+  .about-section h1 {
+    font-size: 64px;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 730px;
+  }
+
+
+
+
+
+
+  .meet {
+    background: #004047;
+  }
+  
+  .meet h2 {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+  }
+  
+  .card {
+    width: 350px;
+    height: 305.13px;
+    background: #012f34;
+    text-align: center;
+    padding: 12px;
+    position: relative;
+    margin-bottom: 100px;
+    margin-left: 100px;
+  }
+  
+  .dumalo {
+      position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #f67e7e;
+    bottom: -20px;
+    left: 130px;
+    color: #000;
+  }
+
+
+
+
+
+
+  .clients-section {
+    background-color: #012F34; /* Match the dark green background */
+    color: white;
+    text-align: center;
+    padding: 90px 160px;
+  }
+  
+  .clients-section h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  
+  .clients-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: nowrap;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* CTA Section Styles */
+.cta-section {
+    background-color: #e26b6b; /* Match the light red/pink background */
+    color: #012F34; /* Match the dark green text color */
+    text-align: center;
+    padding: 70px 20px;
+  }
+  
+  .cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    border: 2px solid #184d53; /* Match the dark green border */
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: #184d53;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #184d53;
+    color: #e26b6b; /* Switch to the light red/pink color */
+  }
+  
+  
+
+
+
+
+/* Default styles are already for large screens */
+
+/* Medium Screens (Tablets, 768px to 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+      flex-direction: column;
+      gap: 20px;
+  }
+  .nav-links {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+  }
+  .about-section .flex {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .about-section p {
+      width: 100%;
+  }
+  .meet .flex {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+  .card {
+      margin: 0 auto;
+  }
+  .clients-logos {
+      flex-wrap: wrap;
+      gap: 40px;
+  }
+  .cta-content {
+      flex-direction: column;
+      gap: 20px;
+  }
+}
+
+/* Small Screens (Mobile, max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+      margin: 20px;
+  }
+  .about-section {
+      padding: 50px 20px;
+  }
+  .about-section h1 {
+      font-size: 48px;
+  }
+  .about-section p {
+      font-size: 16px;
+  }
+  .meet h2, .clients-section h2, .cta-content h2 {
+      font-size: 36px;
+  }
+  .card {
+      width: 100%;
+      max-width: 300px;
+  }
+  .clients-logos img {
+      width: 100px;
+  }
+  .cta-button {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+ 
+  }
+}
+  
